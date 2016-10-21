@@ -1,0 +1,415 @@
+/* font Embed */
+body{
+	background-color: #F48FB1;
+}
+.small-box {
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-bottom: 1%;
+    margin-left:1%;
+    position: relative;
+    width:18.2%;
+    height:200px;    
+}
+.large-box {
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-bottom: 1%;
+    margin-left:1%;
+    position: relative;
+   width:37.5%;
+   height:200px;
+}
+.small-box > .small-box-footer {
+    background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    padding: 3px 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.small-box > .inner {
+    padding: 15px;
+}
+
+.small-box .icon {
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 40px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    transition: all 0.3s linear 0s;
+    z-index: 0;
+
+}
+
+.small-box h3 {
+    font-size: 140%;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding-top: 30px;
+    white-space: nowrap;
+    text-align: center;
+    color: white;
+}
+.small-box img{
+	margin-left:35%;
+	margin-top: 3%;	
+	width: 33%;
+	height: 33%;
+	
+}
+.small-box p {
+    font-size: 15px;
+}
+
+.small-box > .small-box-footer:hover {
+    background: rgba(0, 0, 0, 0.15) none repeat scroll 0 0;
+    color: #ffffff;
+}
+
+
+
+
+.large-box > .inner {
+    padding: 15px;
+}
+
+.large-box .icon {
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 40px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    transition: all 0.3s linear 0s;
+    z-index: 0;
+
+}
+
+.large-box h3 {
+    font-size: 140%;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding-top: 30px;
+    white-space: nowrap;
+    text-align: center;
+    color: white;
+       
+}
+.large-box img {
+	margin-left: 45%;
+	margin-top: 3%;	
+	width: 13%;
+	height: 13
+	
+}
+
+.large-box p {
+    font-size: 15px;
+}
+
+.large-box > .small-box-footer:hover {
+    background: rgba(0, 0, 0, 0.15) none repeat scroll 0 0;
+    color: #ffffff;
+}
+
+.abox {
+    position: relative;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+}
+
+.abox-header {
+    color: #444;
+    display: block;
+    padding: 15px;
+    position: relative
+}
+
+.abox-header .abox-title {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1
+}
+
+.abox-header > .abox-tools {
+    position: absolute;
+    right: 10px;
+    top: 5px
+}
+
+.abox-body {
+    padding: 15px
+}
+
+.abox-body > .table {
+    margin-bottom: 0
+}
+
+.abox-footer {
+    border-top: 1px solid #f4f4f4;
+    padding: 10px;
+    background-color: #fff
+}
+
+div.table_length label {
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+}
+
+div.table_length select,
+div.table_length .dropdown-menu {
+    min-width: 50px;
+}
+
+div.table_length .dropdown-menu > li > a {
+    padding: 3px 10px;
+}
+
+div.table_filter {
+    text-align: right;
+}
+
+div.table_info {
+    padding-top: 8px;
+    white-space: nowrap;
+}
+
+div.table_paginate {
+    margin: 0;
+    white-space: nowrap;
+    text-align: right;
+}
+
+div.table_paginate ul.pagination {
+    margin: 2px 0;
+    white-space: nowrap;
+}
+
+.modal-footer {
+    color: #ffffff !important;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-aqua {
+    background-color: #00838F;
+}
+
+.bg-green {
+    background-color: #558B2F;
+}
+.bg-hardGreen {
+    background-color: #4CAF50;
+}
+.bg-yellow {
+    background-color: #f39c12;
+}
+
+.bg-red {
+    background-color: #dd4b39; 
+}
+.bg-cyan {
+	background-color: #00ACC1;
+}
+.bg-lightGreen {
+	background-color: #70ad47;
+}
+.bg-Amber {
+	background-color: #9E9D24;
+}
+.bg-orange {
+    background-color: #FB8C00;
+}
+.bg-blue {
+    background-color: #29B6F6;
+}
+
+.bg-red, .bg-yellow, .bg-aqua, .bg-blue, .bg-light-blue, .bg-green, .bg-navy, .bg-teal, .bg-olive, .bg-lime, .bg-orange, .bg-fuchsia, .bg-purple, .bg-maroon, .bg-black, .bg-red-active, .bg-yellow-active, .bg-aqua-active, .bg-blue-active, .bg-light-blue-active, .bg-green-active, .bg-navy-active, .bg-teal-active, .bg-olive-active, .bg-lime-active, .bg-orange-active, .bg-fuchsia-active, .bg-purple-active, .bg-maroon-active, .bg-black-active, .callout.callout-danger, .callout.callout-warning, .callout.callout-info, .callout.callout-success, .alert-success, .alert-danger, .alert-error, .alert-warning, .alert-info, .label-danger, .label-info, .label-waring, .label-primary, .label-success, .modal-primary .modal-body, .modal-primary .modal-header, .modal-primary .modal-footer, .modal-warning .modal-body, .modal-warning .modal-header, .modal-warning .modal-footer, .modal-info .modal-body, .modal-info .modal-header, .modal-info .modal-footer, .modal-success .modal-body, .modal-success .modal-header, .modal-success .modal-footer, .modal-danger .modal-body, .modal-danger .modal-header, .modal-danger .modal-footer {
+    color: #ffffff;
+}
+
+.user-summary-container {
+    background-color: #EEEEEE;
+}
+
+.user-summary-container .user-img {
+    height: 50px;
+    width: 50px;
+}
+
+.user-summary-container .abox-header {
+    padding-bottom: 0;
+}
+
+.user-summary-container .abox-body {
+    padding-top: 0;
+}
+
+.user-summary-container hr {
+    border-color: #DDDDDD;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/** Page CSS End **/
+/*start login-page*/
+.login-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.login-bg {
+    background: url("../images/alert-login.jpg") no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+}
+
+.login-content {
+    top: 200px;
+    bottom: -200px;
+    left: 0;
+    right: 0;
+    padding: 10px 20px 20px;
+    border-radius: 4px;
+    background: url("../images/bgback.png") repeat;
+    box-shadow: 0 0 2px #444;
+}
+
+.legend-data {
+    color: #232323;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 10px 15px;
+}
+
+.forgetPassword {
+    padding-top: 10px;
+}
+
+.forgetPassword a {
+    font-size: 13px
+}
+
+/*
+End login page*/
+/*
+side bar*/
+
+/* Sidebar */
+
+.sidebar {
+    background: #f2f2f2;
+    color: #777;
+    margin: 30px -15px;
+}
+
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.sidebar .nav > li{
+    font-size: 13px;
+    color: #777;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #f6f6f6;
+    background-color: #f8f8f8;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f2f2f2));
+    background: -webkit-linear-gradient(top, #f9f9f9, #f2f2f2);
+    background: -moz-linear-gradient(top, #f9f9f9, #f2f2f2);
+    background: -ms-linear-gradient(top, #f9f9f9, #f2f2f2);
+    background: -o-linear-gradient(top, #f9f9f9, #f2f2f2);
+    background: linear-gradient(top, #f9f9f9, #f2f2f2);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#f9f9f9', endColorstr='#f2f2f2'); /*For IE7-8-9*/
+    box-shadow: inset 0px 1px 1px #f6f6f6;
+}
+
+.sidebar .nav > li > a:hover, .sidebar ul.nav > li.active a, .sidebar .nav > li a:focus {
+
+    cursor: pointer;
+    border-bottom: 1px solid #167cac;
+    border-top: 1px solid #2094ca;
+    background-color: #aaa;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1aaef3), to(#0993d3));
+    background: -webkit-linear-gradient(top, #1aaef3, #0993d3);
+    background: -moz-linear-gradient(top, #1aaef3, #0993d3);
+    background: -ms-linear-gradient(top, #1aaef3, #0993d3);
+    background: -o-linear-gradient(top, #1aaef3, #0993d3);
+    background: linear-gradient(top, #1aaef3, #0993d3);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#1aaef3', endColorstr='#0993d3');/*For IE7-8-9*/
+    box-shadow: none;
+    color: #fff;
+    font-weight: bold;
+    margin-top: -1px;
+}
+
+
+/*graph event*/
+#chartdiv {
+    width: 100%;
+    height: 500px;
+    font-size: 11px;
+}
+
+.amcharts-export-menu-top-right {
+    top: 10px;
+    right: 0;
+}
+
+/*end graph event*/
+/* Main */
+
+/*To Zoom color box on mouse hover  */
+.fond{position:absolute;padding-top:85px;top:0;left:0; right:0;bottom:0;
+ background-color:#00506b;}
+
+.style_prevu_kit
+{
+    display:inline-block;
+   /* border:0;
+     width:19.75%;
+    height:150px; */
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 15px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}

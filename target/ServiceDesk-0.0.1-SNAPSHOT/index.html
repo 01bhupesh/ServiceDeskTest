@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="sdWeb">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="view/header.html" rel="stylesheet">
+<link rel="stylesheet" href="css/header.css">
+<link href="css/simple-sidebar.css" rel="stylesheet">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link href="css/overlay.css" rel="stylesheet">
+<link href="css/dashboard.css" rel="stylesheet">
+<script
+	src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="js/angular.js"></script>
+<script src="js/angular-animate.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ng-table.js"></script>
+<script src="js/ng-table.min12.js"></script>
+<script src="js/ui-bootstrap-tpls.js"></script>
+<script src="js/index.js"></script>
+<script src="js/dashboardCtrl.js"></script>
+<script src="js/serviceReqCtrl.js"></script>
+<script src="js/developmentRequest.js"></script>
+<script>
+function toggleButton() {
+	 $("#wrapper").toggleClass("toggled");
+}
+</script>
+   
+</head>
+<body ng-controller="sdWebCtrl">	
+		<div class="main">
+			<div class="headerLeft">
+				<div class="mennuIconSpan"><button onclick="toggleButton()"><img src="images/mennuIcon.jpg" class="mennuIcon"><h5>MENU</h5></button></div>
+			</div>
+			<div class="headerCenter">
+				<a href="http://www.w3schools.com/"><span style="font-size:24px; color: white;">Service Desk</span></a>
+			</div>
+			<div class="headerRight">
+				<div class="userName"> Hi, <u>David</u> <select>
+					<option value="logout"></option>
+				</select></div>	
+			<div class="img">
+		      <img src="images/anrImage.jpg" alt="Anr logo"
+					width="80" height="80">
+		    </div>			
+			</div>	
+		</div>
+	<div id="wrapper">
+	<div id="sidebar-wrapper" >
+		<ul class="sidebar-nav nav" id="sidebar-nav">
+			<li class="sidebar-brand"><a href="#"> Start Bootstrap </a></li>
+			<li><a href="#">Dash board</a></li>
+			<li><a href="#">Shortcuts</a></li>
+			<li><a href="#">Overview</a></li>
+			<li><a href="#">Events</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+	
+	<div id="mainContent" ui-view="" onload="mainContent()"></div> </div>
+</body>
+</html>

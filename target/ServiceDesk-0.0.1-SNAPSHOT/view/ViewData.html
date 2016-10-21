@@ -1,0 +1,33 @@
+<body>     
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped table-bordered" border="1">
+                    <thead>
+                        <tr>
+                            <th>Select Enviorment</th>
+                            <th>Severity</th>
+                            <th>Service Selector</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th>Request Title</th>
+                            <th>Request Description</th>
+                            <th>Delete</th>
+                            <th>Update</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="ServiceDetail in userList">
+                         
+                            <td>{{ServiceDetail.selectEnviornment}}</td>;
+                            <td>{{ServiceDetail.severity}}</td>
+                            <td>{{ServiceDetail.serviceSelector}}</td>
+                             <td>{{ServiceDetail.startTime}}</td>
+                            <td>{{ServiceDetail.endTime}}</td>
+                            <td>{{ServiceDetail.requestTitle}}</td>
+                             <td>{{ServiceDetail.requestDisc}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>

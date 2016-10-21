@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<div>
+		<div class="content-wrapper">
+			<div style="padding-left: 15%; padding-right: 15%; padding-top: 3%;">
+				<div class="panel panel-default">
+					<div class="panel-heading" style="background: #039BE5;">
+						<font size="2" color="white"><b>Service Request</b></font> <a
+							href="#" style="padding-left: 5%;"><span class="small">Home</span></a>
+						<span class="small"><b>>Service Request</b></span>
+					</div>
+				</div>
+				<br>
+
+				<div
+					style="border-style: ridge; border-color: blue; background: #E0F2F1; padding-left: 2%; padding-top2 %; padding-left: 2%; padding-bottom: 5%;">
+					<span class="small">Provide a much information as possible
+						to make sure team you are assigning this task to can take care of
+						this with ease.</span>
+					<div>
+						<br> <span class="small"><b>**Select Enviornment</b> </span>
+
+						<span class="small" style="padding-left: 26%;"><b>**Severity
+						</b></span> <span class="small" style="padding-left: 23%;"><b>**Attach
+								Document</b></span>
+					</div>
+					
+					<div>
+					<div>
+						<span class="small" style="padding-left: 3%;"> <select
+							style="height: 30px; background-color: lightblue;"
+							ng-model="user.selectEnviornment">
+								<option value="">Select Option </option>
+								<option value="Production">Production</option>
+								<option value="service">service</option>
+						</select>
+						</span>
+										  
+						 <span class="small" style="padding-left: 30%;"> <select
+							style="height: 30px; background-color: lightblue;"
+							ng-model="user.severity">
+								<option value="">Select Option </option>
+								<option value="High">High</option>
+								<option value="low">Low</option>
+						</select>
+						</span> <span class="small" style="padding-left: 20%;"> <select
+							style="height: 30px; background-color: lightblue;">
+								<option value="volvo">Volvo</option>
+								<option value="file">select a file to Upload</option>
+						</select>
+						</span>
+					</div>
+					<br>
+					<div>
+						<span class="small"><b>**Service Selector</b> </span>
+					</div>
+					<div>
+						<span class="small" style="padding-left: 2%;"> <select
+							ng-model="user.serviceSelector"
+							style="height: 30px; background-color: lightblue;">
+								<option value="">Select Option </option>
+								<option value="DataBase" >DataBase</option>
+								<option value="selector" >selector</option>
+						</select>
+						</span> <span class="small" style="padding-left: 28%;">Though Team
+							start working on a task as soon as it comes in queue. </span>
+					</div>
+					<br>
+					<div>
+
+						<span class="small"><b>**Situation</b> </span> <span class="small"
+							style="padding-left: 32%;"><b>**Start Time</b></span> <span
+							class="small" style="padding-left: 21%;"><b>**End Time</b></span>
+					</div>
+					<div style="padding-left: 3%;">
+						<span class="small"> <input type="radio">Hello
+
+
+						</span> <span class="small" style="padding-left: 35%;"> <input
+							type="text" style="height: 30px; background-color: lightblue;"
+							name="startDate" ng-model="user.startTime"
+							value="15-10-2016 , 08:30pm">
+						</span> <span class="small" style="padding-left: 15%;"> <input
+							type="text" style="height: 30px; background-color: lightblue;"
+							name="endTime" ng-model="user.endTime"
+							ng-bind="15-10-2016 , 12:20am">
+						</span> <br> <input type="radio">hello<br> <input
+							type="radio">hello
+					</div>
+					<br>
+					<div>
+
+						<span class="small"><b>**Request Title.</b> </span> <br> <input
+							type="text" style="height: 30px; width: 80%;"
+							ng-model="user.requestTitle" name="requestTitle" value="">
+
+					</div>
+					<br>
+					<div>
+
+						<span class="small"><b>**Request Description.</b> </span> <br>
+						<input type="text" ng-model="user.requestDisc"
+							style="height: 50px; width: 80%;" name="requestDisc" value="">
+
+
+					</div><br>
+					<div style="padding-left: 40%;">					
+					<button style="background-color: green;height: 40px; width: 100px;" ng-click="sendPost(user)">Submit</button>
+                   </div>
+				</div>
+			</div>
+		</div>
+	</div><br><br>
+   <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped table-bordered" border="1" width="1200px" >
+                    <thead>
+                        <tr bgcolor="#039BE5">
+                            <th>Select Enviorment</th>
+                            <th>Severity</th>
+                            <th>Service Selector</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th>Request Title</th>
+                            <th>Request Description</th>
+                            <th>Delete</th>
+                            <th>Update</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="items in userList">
+                    
+                            <td>{{items.selectEnviornment}}</td>
+                            <td>{{items.severity}}</td>
+                            <td>{{items.serviceSelector}}</td>
+                             <td>{{items.startTime}}</td>
+                            <td>{{items.endTime}}</td>
+                            <td>{{items.requestTitle}}</td>
+                            <td>{{items.requestDisc}}</td>
+                            <td><button style="background-color: lightblue;height: 40px; width: 100px;" ng-click="remove(items)">Delete</button>
+                            </td>
+                            <td><button style="background-color: lightblue;height: 40px; width: 100px;" ng-click="pushData(items)">Update</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>
+</html>
+

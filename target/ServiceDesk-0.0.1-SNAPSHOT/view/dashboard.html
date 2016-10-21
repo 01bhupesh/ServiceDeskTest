@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Service Desk DashBoard</title>
+    <link href="css/simple-sidebar.css" rel="stylesheet">    
+</head>
+<body>
+
+	<div class="content-wrapper">
+		<div style="padding-left: 20%; padding-right: 20%; padding-top: 3%;">
+			<!--  ---------------------------------First Row------------------------------- -->
+			<div class="large-box bg-aqua style_prevu_kit" onclick="location.href = '#/serviceRequest'">
+				<div class="inner">
+					<h3>Service Request</h3>
+					<img alt="se" src="images/ServiceReq_image.png">
+					<div ng-repeat="items in topSeverities" class="row">
+						<div class="col-md-9">{{items.name}}</div>						
+					</div>
+				</div>
+			</div>
+
+		 <div class="small-box bg-Amber style_prevu_kit">
+            <div class="inner">
+                <h3>Dashboard</h3>
+                <img alt="se" src="images/Dashboard_image.png">
+                <div ng-repeat="items in topSeverities" class="row">
+                    <div class="col-md-9">{{items.name}}</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="large-box bg-lightGreen style_prevu_kit" onclick="location.href='#/developmentRequest';">
+            <div class="inner">
+                <h3>Dovelopment Request</h3>
+                <img alt="se" src="images/DovReq_image.png">
+                <div ng-repeat="items in topSeverities" class="row">
+                    <div class="col-md-9">{{items.name}}</div>
+                </div>
+            </div>
+        </div>
+        
+        
+    
+        
+         <!-- ---------------------------------Second Row------------------------------- -->
+        <div class="small-box bg-cyan style_prevu_kit">
+            <div class="inner">
+                <h3>Quick Links</h3>
+                <img alt="se" src="images/QuickLinks_image.png">
+                <div ng-repeat="items in topSeverities" class="row">
+                    <div class="col-md-9">{{items.name}}</div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="large-box bg-green style_prevu_kit">
+            <div class="inner">
+                <h3>Document Review</h3>
+                <img alt="se" src="images/Document_image.png">
+                <div ng-repeat="items in topSeverities" class="row">
+                    <div class="col-md-9">{{items.name}}</div>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="small-box bg-blue style_prevu_kit">
+            <div class="inner">
+                <h3>How To</h3>
+                <img alt="se" src="images/HowTo_image.png">
+                <div ng-repeat="items in topSeverities" class="row">
+                    <div class="col-md-9">{{items.name}}</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="small-box bg-orange style_prevu_kit">
+            <div class="inner">
+                <h3>Reports</h3>
+                <img alt="se" src="images/Report_image1.png">
+                <div ng-repeat="items in topSeverities" class="row">
+                    <div class="col-md-9">{{items.name}}</div>
+                </div>
+            </div>
+
+        </div>
+        
+        
+        
+       <!--   ---------------------------------Third Row------------------------------- -->
+        <div class="large-box bg-aqua style_prevu_kit">
+            <div class="inner">
+                <h3>Daily Team Task Board</h3>
+                <img alt="se" src="images/TeamTask_image1.png">
+                <div ng-repeat="items in topSeverities" class="row">
+                    <div class="col-md-9">{{items.name}}</div>
+                </div>
+            </div>
+        </div>  
+        <div class="large-box bg-hardGreen style_prevu_kit">
+            <div class="inner">
+                <h3>Conference Room</h3>
+                <img alt="se" src="images/ConfRoom_image.png">
+                <div ng-repeat="items in topSeverities" class="row">
+                    <div class="col-md-9">{{items.name}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="small-box bg-cyan style_prevu_kit">
+            <div class="inner">
+                <h3>Recurring Tasks</h3>
+                <img alt="se" src="images/RecurringTask_image.png">              
+                <div ng-repeat="items in topSeverities" class="row">
+                    <div class="col-md-9">{{items.name}}</div>
+                </div>
+            </div>
+        </div>
+      </div>
+	</div>
+	</div>
+</body>
+</html>

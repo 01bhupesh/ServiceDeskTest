@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="import" href="view/header.html">
+</head>
+<body ng-app="sdWeb">
+	<div class="container"
+		style="padding-left: 5%; padding-right: 15%; padding-top: 3%;">
+		<div class="well"
+			style="width: 1100px; height: 60px; padding-left: 2%; background: #039BE5">
+			<font size="3" color="white"><b>Development Request</b></font> <a
+				href="#" style="padding-left: 5%;"><font size="2"
+				color="#283593">Home</font></a> <font size="2"><b>Development
+					Request</b></font>
+		</div>
+		<div>
+			<div>
+				<div class="well"
+					style="width: 1100px; border-color: blue; height: 580px; padding-left: 2%; padding-top: 1%; padding-bottom:5%; background: #E0F2F1;">
+					<div class="row">
+						<div class="col-sm-12">
+							<big><span class="small"><i>Prove as much
+										information as possible to make sure team you are assigning
+										this task to can take care of this with ease.</i></span>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<br> <big> <span class="small"><b>** Select
+										Environment</b></span>
+						</div>
+						<div class="col-sm-6">
+							<br> <span class="small"><b>** Severity</b></span> </big>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<big> <span class="small" style="padding-left: 4%;">
+									<select ng-model="devReq.selectEnvironment"
+									style="padding-left: 10px; height: 30px; background: lightblue;">
+										<option value="">Select Value</option>
+										<option value="volvo">Volvo</option>
+										<option value="Production"></option> selected>Production
+										</option>
+								</select>
+							</span>
+							</big>
+						</div>
+
+						<div class="col-sm-6">
+							<big> <span class="small" style="padding-left: 4%;">
+									<select ng-model="devReq.severity"
+									style="padding-left: 10px; height: 30px; background: lightblue;">
+										<option value="">Select Value</option>
+										<option value="volvo">Volvo</option>
+										<option value="High" selected>hide</option>
+								</select>
+							</span>
+							</big>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<br> <big><span class="small"><b>** Service
+										Selector</b></span> </big>
+						</div>
+						<div class="col-sm-6">
+							<br> <big><span class="small"><b>** Attach
+										Document</b></big></span> </big>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<big> <span class="small" style="padding-left: 4%;">
+									<select ng-model="devReq.serviceSelector"
+									style="padding-left: 10px; height: 30px; background: lightblue;">
+										<option value="">Select Value</option>
+										<option value="volvo">Volvo</option>
+										<option value="Production"></option> selected>Production
+										</option>
+								</select>
+							</span></big>
+						</div>
+
+						<div class="col-sm-6">
+							<big> <span class="small" style="padding-left: 4%;">
+									<select
+									style="padding-left: 10px; height: 30px; background: lightblue;">
+										<option value="">Select Value</option>
+										<option value="volvo">Volvo</option>
+										<option value="High" selected>hide</option>
+								</select>
+							</span></big>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<br> <big><span class="small"><b>**
+										Situation</b></span></big>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<ul style="list-style-type: circle">
+								<li>Bug or Non working code in Production /Client QA
+									/Stating</li>
+								<li>New Enhancement in existing features</li>
+								<li>Internal Code recommended</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<br> <big><span class="small"><b>** Request
+										Title</b></span></big>
+						</div>
+					</div>
+					<div class="row" style="padding-top: 1%">
+						<div class="col-sm-10" style="padding-left: 3%;">
+							<input ng-model="devReq.requestTitle"
+								style="height: 30px; width: 100%;" name="firstname" value="">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<br> <big><span class="small"><b>** Request
+										Description</b></span></big>
+						</div>
+					</div>
+					<div class="row" style="padding-top: 1%">
+						<div class="col-sm-10" style="padding-left: 3%;">
+							<input ng-model="devReq.requestDes"
+								style="height: 60px; width: 100%;">
+						</div>
+						<br>
+						<div class="col-sm-2" style="padding-left: 40%;">
+							<button type="submit" ng-click="submit(devReq)"
+								style="height: 40px; background-color:green; width: 100px;">submit</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+</body>
+</html>

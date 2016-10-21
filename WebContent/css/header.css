@@ -1,0 +1,85 @@
+.main {
+	background-color: #2877ba;
+	height:100px;
+	width: 100%;
+}
+
+.headerLeft {
+	float: left;
+	display: inline;
+	width:33%;	
+}
+.headerCenter{
+	display: inline;
+	width: 33%;
+	height: 180px;
+    padding: 14px;
+    line-height: 130px;
+    padding-left: 90px;
+}
+a {
+	color: white;
+	text-decoration:none;
+	font-size: 24px;   
+}
+.headerRight {
+    float: right;
+	display :inline;
+	width:33%;
+}
+.anrlogo {
+    float: right;
+    margin-right: 150px;
+    position: static;
+}
+.anrlogo img{
+	width: 80px;
+	height: 80px;
+}
+.mennuIcon {
+    width: 20px;
+    height: 20px;
+    margin-left: 0px;
+    padding-right: 5px;
+    position: relative;
+}
+.mennuIconSpan  h5{
+    display: inline-block;
+	color: white;
+}
+.serviceIcon {
+	width: 220px;
+	height: 80px;
+    padding: 14px;
+}
+.mennuIconSpan{
+    padding: 0px 0px 5px 150px;
+    text-decoration: none;
+}
+.userName {
+    padding: 19px;
+    display: inline-block;
+	color:white;
+}
+.userName h5{
+}
+.mennuIconSpan button{
+    height: 23px;
+    width: 75px;
+    margin-top: 14px;
+    background-color: #5420ff;
+    padding: 0px;
+    border: blue;
+    cursor: pointer;}
+.mennuIconSpan h5 {
+    display: inline-block;
+    color: white;
+    padding: 5PX;
+    MARGIN: 0px;
+    /* background-color: blue; */
+}
+.headerRight .img {
+    float: right;
+    display: inline-block;
+	padding:1px 125px 15px 0px;
+}
